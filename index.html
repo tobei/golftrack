@@ -31,6 +31,15 @@
                 tilt: 0,
                 disableDefaultUI: true
             });
+
+            google.maps.event.addListener(map, "click", (event) => {
+                new google.maps.Marker({
+                    position: event.latLng,
+                    map: map,
+                    draggable:true
+                });
+            });
+
             const marker = new google.maps.Marker({
                 position: coordinates,
                 map: map,

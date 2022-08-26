@@ -55,7 +55,7 @@
 
             async function adjustPosition(position) {
                 const coordinates = {lat: position.coords.latitude, lng: position.coords.longitude };
-                marker.position = coordinates;
+                marker.setPosition(coordinates);
 
             }
             navigator.geolocation.watchPosition(adjustPosition, null, locationOptions);

@@ -1,7 +1,7 @@
 {
   "name": "Golf Tracker",
   "short_name": "Golf Tracker",
-  "start_url": "/",
+  "start_url": "/golftrack",
   "id": "/",
   "scope": "/",
   "display": "standalone",
